@@ -1,0 +1,20 @@
+[Unit]
+#nano /etc/systemd/system/telegramBot.service
+#systemctl daemon-reload
+#systemctl start telegramBot
+Description=telegram bot manage
+[Service]
+Type=simple
+Restart=on-failure
+
+User=root
+Group=root
+
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+# change me
+WorkingDirectory=/opt/telegram_gui
+ExecStart=/usr/bin/babel-node /opt/telegram_gui/app.js
+
+[Install]
+WantedBy=multi-user.target

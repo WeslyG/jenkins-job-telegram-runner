@@ -1,0 +1,17 @@
+{
+  "name": "telegram_gui",
+  "version": "2.0.1",
+  "description": "for users",
+  "main": "app.js",
+  "scripts": {
+    "start": "babel-node app.js"
+  },
+  "author": "lila",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "node-telegram-bot-api": "^0.30.0"
+  }
+}
